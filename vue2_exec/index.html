@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+	</head>
+	<body>
+		<div id="abc">
+			<!-- <p v-if="show">{{message}}</p >
+			<p v-show="show">{{message}}</p > -->
+			输入成绩：<input v-model="score" type="text"/>
+			<h2 v-if="score>=90">优秀</h2>
+			<h2 v-else-if="score>=80">良好</h2>
+			<h2 v-else-if="score>=60">合格</h2>
+			<h2 v-else>不合格</h2>
+		</div>
+		<script type="text/javascript" src="./vue.min.js"></script>
+		<script type="text/javascript">
+			var a=new Vue({
+				el:"#abc",
+				data:{
+					// message:"hello",
+					// show:false,
+					score:0
+				},
+			})
+		</script>
+	</body>
+</html>
